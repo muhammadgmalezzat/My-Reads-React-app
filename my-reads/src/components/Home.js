@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import BookShelf from './BookShelf'
-//import * as BookAPI from '../utils/BooksAPI'
 
-const Home = () => {
+const Home = ({booksFromApi,changeShelf}) => {
 
+console.log("from home",{booksFromApi})
 
-
+    
     return (
         <div className="list-books">
             <div className="list-books-title">
@@ -14,9 +14,9 @@ const Home = () => {
             </div>
             <div className="list-books-content">
                 <div>
-                    <BookShelf sectionName={"Currently Reading" } />
-                    <BookShelf sectionName={"Want to Read" } />
-                    <BookShelf sectionName={"Read" } />
+                    <BookShelf sectionName={"Currently Reading"} booksFromHome={booksFromApi} shelfName="currentlyReading" changeShelf={changeShelf} />
+                    <BookShelf sectionName={"Want to Read" } booksFromHome={booksFromApi}  shelfName="wantToRead" changeShelf={changeShelf} />
+                    <BookShelf sectionName={"Read" } booksFromHome={booksFromApi}  shelfName="read" changeShelf={changeShelf} />
                     
                 </div>
             </div>

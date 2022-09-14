@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-
+//import Book from './Book'
 
 const Search = () => {
+
+
     return (
+
         <div className="search-books">
             <div className="search-books-bar">
                 <Link className="close-search" to="/">Close</Link>
@@ -12,10 +15,12 @@ const Search = () => {
                 </div>
             </div>
             <div className="search-books-results">
-                <ol className="books-grid"></ol>
+                <ol className="books-grid">
+                </ol>
             </div>
         </div>
     );
+
 };
 
 export default Search
