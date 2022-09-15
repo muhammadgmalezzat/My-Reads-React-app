@@ -19,4 +19,4 @@
 
 ### Start Project
 
-    npm run start
+    npm start
