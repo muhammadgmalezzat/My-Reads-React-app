@@ -4,9 +4,6 @@ import BookShelf from './BookShelf'
 
 const Home = ({booksFromApi,changeShelf}) => {
 
-console.log("from home",{booksFromApi})
-
-    
     return (
         <div className="list-books">
             <div className="list-books-title">

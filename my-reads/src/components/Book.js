@@ -2,7 +2,6 @@ import React from 'react'
 
 const Book = ({Book,onChangeShelf}) => {
 
-    //console.log(Book.title);
     return (
         <div className="book">
             <div className="book-top">
@@ -30,11 +29,6 @@ const Book = ({Book,onChangeShelf}) => {
             </div>
             <div className="book-title">{Book.title}</div>
             <div className="book-authors">{Book.authors}</div>
-            {/* <div className="book-authors">
-                <strong>
-                    {Book.shelf ? Book.shelf : "none"}
-                </strong>
-            </div> */}
         </div>
     );
 }
