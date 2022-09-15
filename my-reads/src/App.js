@@ -40,7 +40,7 @@ function App() {
   };
 
   const handleInputChange = async (query) => {
-    await setQuery(query.trim());
+    await setQuery(query);
     await handleBooksSearch(query);
   };
 
