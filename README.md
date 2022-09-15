@@ -1,2 +1,22 @@
 # My-Reads-React-app
-Udacity frontend nanodegree 
+
+#### frontand Technologies
+
+    - React
+    - Javascript
+    - React Hooks
+    - React Routing
+
+
+## Steps to start
+
+### Scripts
+    cd my-reads
+
+#### Installing
+
+    npm install
+
+### Start Project
+
+    npm run start
